@@ -1,6 +1,10 @@
+// datasource db {
+//   provider = "mysql" // ou outro banco de dados
+//   url      = env("DATABASE_URL")
+// }
 datasource db {
-  provider = "mysql" // ou outro banco de dados
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 generator client {
