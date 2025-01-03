@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "ESNext", // Gera ES Modules
+    "target": "ESNext", // Usa as versões mais recentes do JavaScript
+    "moduleResolution": "Node", // Resolve módulos como no Node.js
+    "outDir": "./dist", // Diretório de saída dos arquivos compilados
+    "strict": false, // Habilita verificações rigorosas
+    "esModuleInterop": true, // Suporte para bibliotecas CommonJS
+    "allowSyntheticDefaultImports": true, // Permite importações simplificadas
+    "skipLibCheck": true, // Ignora checagem de tipos em arquivos de bibliotecas
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
