@@ -24,7 +24,9 @@ model Ticket {
   id          Int        @id @default(autoincrement())
   title       String
   description String
+  priority    String     @default("low")
   status      String     @default("open") // open, in-progress, closed
+  assignee    String     @default("user")
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
   userId      Int
